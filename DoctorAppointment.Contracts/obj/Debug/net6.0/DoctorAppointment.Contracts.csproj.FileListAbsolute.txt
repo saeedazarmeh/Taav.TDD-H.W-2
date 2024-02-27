@@ -1,0 +1,35 @@
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.deps.json
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.pdb
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfoInputs.cache
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfo.cs
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\refint\DoctorAppointment.Contracts.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.pdb
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\ref\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.deps.json
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.AssemblyReference.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfoInputs.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfo.cs
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.CoreCompileInputs.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\refint\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Second\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\ref\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.deps.json
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.AssemblyReference.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfoInputs.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfo.cs
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.CoreCompileInputs.cache
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\refint\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\Taav.TDD-H.W-2\DoctorAppointment.Contracts\obj\Debug\net6.0\ref\DoctorAppointment.Contracts.dll
