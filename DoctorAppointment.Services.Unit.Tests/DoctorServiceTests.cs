@@ -9,6 +9,7 @@ using DoctorAppointment.Services.Doctors.Exeptipn;
 using DoctorAppointment.Services.Exeptipn;
 using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities;
 using System.Numerics;
 
@@ -131,7 +132,7 @@ public class DoctorServiceTests
 
     }
     [Fact]
-    public async Task GetAll_GetAll_doctors_Numbers_Should_be_one()
+    public async Task GetAll_GetAll_doctors_Numbers_Should_be_Two()
     {
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
@@ -148,8 +149,31 @@ public class DoctorServiceTests
 
         //assert
         doctors.Count().Should().Be(2);
+    }
 
+    [Fact]
+    public async Task GetAll_GetAll_doctors_Numbers_Should_Uploaded_Properly()
+    {
+        var db = new EFInMemoryDatabase();
+        var context = db.CreateDataContext<EFDataContext>();
+        var readContext = db.CreateDataContext<EFDataContext>();
+        //arrange
+        var doctor1 = new Doctor("dummy-first-name1", "dummy-last-name1", "heart", "2280909952");
+        var doctor2 = new Doctor("dummy-first-name2", "dummy-last-name2", "child", "1812596122");
+        context.Save(doctor1);
+        context.Save(doctor2);
+        var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
 
+        //act
+        var doctors = await sut.GetAll();
+
+        //assert
+        doctors[0].FirstName.Should().Be(doctor1.FirstName);
+        doctors[0].LastName.Should().Be(doctor1.LastName);
+        doctors[0].Field.Should().Be(doctor1.Field);
+        doctors[1].FirstName.Should().Be(doctor2.FirstName);
+        doctors[1].LastName.Should().Be(doctor2.LastName);
+        doctors[1].Field.Should().Be(doctor2.Field);
     }
 }
 
