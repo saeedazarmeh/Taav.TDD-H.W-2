@@ -16,11 +16,24 @@ public class Doctor
     public string NationalCode { get;private set; }
     public string Field { get;private set; }
 
-    public void Edit(string firstName, string lastName, string field, string nationalCode)
+    public void Edit(string? firstName=null, string? lastName = null, string? field=null, string? nationalCode=null)
     {
-        FirstName=firstName;
-        LastName=lastName;
-        NationalCode=nationalCode;
-        Field=field;
+        if (firstName != null)
+        {
+            FirstName = firstName;
+        }
+        if (lastName != null)
+        {
+            LastName = lastName;
+        }
+        if (field != null)
+        {
+            Field = field;
+        }
+        if (nationalCode != null)
+        {
+            NationalCode = nationalCode;
+        }
+   
     }
 }

@@ -7,12 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Infrastructure\DatabaseConfig\" />
+      <Folder Include="Infrastructure\DatabaseConfig\NewFolder\" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.27" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.27" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DoctorAppointment.Persistence.EF\DoctorAppointment.Persistence.EF.csproj" />
+      <ProjectReference Include="..\DoctorAppointment.Services\DoctorAppointment.Services.csproj" />
     </ItemGroup>
 
 </Project>

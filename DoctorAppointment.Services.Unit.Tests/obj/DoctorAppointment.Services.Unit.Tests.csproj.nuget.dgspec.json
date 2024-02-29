@@ -392,7 +392,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Job-programing\\Taav Sys Course\\TAAV_Tests\\TDD\\New folder\\Taav.TDD-H.W-2\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
+                "projectPath": "F:\\Job-programing\\Taav Sys Course\\TAAV_Tests\\TDD\\New folder\\Taav.TDD-H.W-2\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
+              },
+              "F:\\Job-programing\\Taav Sys Course\\TAAV_Tests\\TDD\\New folder\\Taav.TDD-H.W-2\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+                "projectPath": "F:\\Job-programing\\Taav Sys Course\\TAAV_Tests\\TDD\\New folder\\Taav.TDD-H.W-2\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

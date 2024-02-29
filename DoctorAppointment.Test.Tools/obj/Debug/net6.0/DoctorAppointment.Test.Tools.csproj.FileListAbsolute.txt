@@ -46,3 +46,12 @@ F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\Docto
 F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\obj\Debug\net6.0\refint\DoctorAppointment.Test.Tools.dll
 F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.pdb
 F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\obj\Debug\net6.0\ref\DoctorAppointment.Test.Tools.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Contracts.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Entities.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Persistence.EF.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Services.dll
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Persistence.EF.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Services.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Contracts.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Entities.pdb
+F:\Job-programing\Taav Sys Course\TAAV_Tests\TDD\New folder\Taav.TDD-H.W-2\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.csproj.CopyComplete
