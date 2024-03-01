@@ -22,7 +22,7 @@ namespace DoctorAppointment.Services.Appointmens
             _unit = unit;
         }
 
-        public async Task Add(AddAppoinmentDTO appoinmentDTO)
+        public async Task SetAppointment(AddAppoinmentDTO appoinmentDTO)
         {
             var appoinment = new Appoinment(appoinmentDTO.PatientId, appoinmentDTO.DoctorId, appoinmentDTO.DaTeTime, appoinmentDTO.Price, appoinmentDTO.Paid);
             if(await _repository.HasTimeConflictedOrNot(appoinmentDTO.DaTeTime))
@@ -31,6 +31,18 @@ namespace DoctorAppointment.Services.Appointmens
             }
             _repository.Add(appoinment);
             await _unit.Complete();
+        }
+
+        public async Task CancellAppointment(int id)
+        {
+            var appointment =await _repository.GetAppointment(id);
+            if(appointment == null)
+            {
+                throw new AppointmentNotFoundException();
+            }
+            _repository.Delete(appointment);
+            _unit.Complete();
+
         }
 
     }

@@ -9,6 +9,8 @@ namespace DoctorAppointment.Services.Appointmens.Cantracts
 {
     public interface AppointmentService
     {
-        Task Add(AddAppoinmentDTO appoinmentDTO);
+        Task SetAppointment(AddAppoinmentDTO appoinmentDTO);
+        Task CancellAppointment(int id);
+        
     }
 }

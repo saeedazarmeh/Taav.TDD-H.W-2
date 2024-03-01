@@ -25,6 +25,11 @@ namespace DoctorAppointment.Persistance.EF.Appointments
             _context.Appoinments.Add(appoinment);
         }
 
+        public async Task<Appoinment> GetAppointment(int id)
+        {
+            return await _context.Appoinments.FirstOrDefaultAsync(_=>_.Id == id);
+        }
+
         public async Task<List<Appoinment>> GetDayAppointments(DateTime dateTime)
         {
             return await _context.Appoinments.Where(_=>_.DaTeTime.Date== dateTime.Date).ToListAsync();
@@ -43,6 +48,11 @@ namespace DoctorAppointment.Persistance.EF.Appointments
             }
 
             return false;
+        }
+
+        public void Delete(Appoinment appoinment)
+        {
+            _context.Appoinments.Remove(appoinment);
         }
     }
 }
