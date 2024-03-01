@@ -9,13 +9,13 @@ namespace DoctorAppointment.Test.Tools.Infrastructure.Facrory.Appointmet
 {
     public class AddAppoinmentDTOFactory
     {
-        public static AddAppoinmentDTO Create()
+        public static AddAppoinmentDTO Create(DateTime? dateTime = null)
         {
             return new AddAppoinmentDTO()
             {
                 PatientId = 1,
                 DoctorId = 1,
-                DaTeTime = new DateTime(2023, 03, 12, 18, 00, 00),
+                DaTeTime = dateTime?? new DateTime(2023, 03, 12, 18, 00, 00),
                 Price = 20000,
                 Paid = 20000,
             };

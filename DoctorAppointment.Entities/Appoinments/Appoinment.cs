@@ -23,6 +23,14 @@ namespace DoctorAppointment.Entities.Appoinments
         public decimal Price { get; private set; }
         public decimal Paid { get; private set; }
 
+        public void Edit( DateTime daTeTime)
+        {
+            if (daTeTime != null)
+            {
+                this.DaTeTime = daTeTime;
+            }
+
+        }
 
     }
 }

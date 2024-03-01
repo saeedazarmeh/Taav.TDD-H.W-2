@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoctorAppointment.Services.Appointmens.Exception;
 
 namespace DoctorAppointment.Services.Appointmens
 {
@@ -24,7 +25,10 @@ namespace DoctorAppointment.Services.Appointmens
         public async Task Add(AddAppoinmentDTO appoinmentDTO)
         {
             var appoinment = new Appoinment(appoinmentDTO.PatientId, appoinmentDTO.DoctorId, appoinmentDTO.DaTeTime, appoinmentDTO.Price, appoinmentDTO.Paid);
-
+            if(await _repository.HasTimeConflictedOrNot(appoinmentDTO.DaTeTime))
+            {
+                throw new TimeConflictedSetAppointmentException();
+            }
             _repository.Add(appoinment);
             await _unit.Complete();
         }

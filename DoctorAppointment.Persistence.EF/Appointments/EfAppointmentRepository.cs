@@ -1,6 +1,8 @@
 ﻿using DoctorAppointment.Entities.Appoinments;
 using DoctorAppointment.Persistence.EF;
 using DoctorAppointment.Services.Appointmens.Cantracts;
+using DoctorAppointment.Services.Appointmens.Exception;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,26 @@ namespace DoctorAppointment.Persistance.EF.Appointments
         public void Add(Appoinment appoinment)
         {
             _context.Appoinments.Add(appoinment);
+        }
+
+        public async Task<List<Appoinment>> GetDayAppointments(DateTime dateTime)
+        {
+            return await _context.Appoinments.Where(_=>_.DaTeTime.Date== dateTime.Date).ToListAsync();
+        }
+
+        public async Task<bool> HasTimeConflictedOrNot(DateTime dateTime)
+        {
+            var appointments = await GetDayAppointments(dateTime);
+            foreach (var appointment in appointments)
+            {
+                if((appointment.DaTeTime.AddMinutes(30)>dateTime && appointment.DaTeTime < dateTime) 
+                    || (appointment.DaTeTime < dateTime.AddMinutes(30) && appointment.DaTeTime > dateTime))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
