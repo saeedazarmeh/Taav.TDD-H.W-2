@@ -6,11 +6,10 @@ using DoctorAppointment.Persistence.EF;
 using DoctorAppointment.Services.Doctors;
 using DoctorAppointment.Services.Doctors.Contracts.Dto;
 using DoctorAppointment.Services.Doctors.Exeptipn;
-using DoctorAppointment.Services.Exeptipn;
 using DoctorAppointment.Test.Tools.Infrastructure.Builder;
+using DoctorAppointment.Test.Tools.Infrastructure.Builder.Doctors;
 using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
-using DoctorAppointment.Test.Tools.Infrastructure.Facrory.Doctor;
-using DoctorAppointment.Test.Tools.Infrastructure.Facrory.InmemoryDatabase;
+using DoctorAppointment.Test.Tools.Infrastructure.Facrory.Doctors;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities;
@@ -28,7 +27,7 @@ public class DoctorServiceTests
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
         var readContext = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var sut = DoctorServiceFactory.Create(context);
 
         //act
         await sut.Add(dto);
@@ -49,7 +48,7 @@ public class DoctorServiceTests
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
         var readContext = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var sut = DoctorServiceFactory.Create(context);
 
         //act
         context.Save(doctor);
@@ -66,17 +65,16 @@ public class DoctorServiceTests
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
         var readContext = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var sut = DoctorServiceFactory.Create(context);
         var doctor = new AddDoctorBuilder().Builder();
         context.Save(doctor);
         var updateDto = UpdateDoctorDTOFactory.Create();
-        var id=readContext.Doctors.First().Id;
         
         //act
-        await sut.Update(id, updateDto);
+        await sut.Update(1, updateDto);
         
         //assert
-        var actual = readContext.Doctors.First(_=>_.Id == id);
+        var actual = readContext.Doctors.First();
         actual.FirstName.Should().Be(updateDto.FirstName);
         actual.LastName.Should().Be(updateDto.LastName);
         actual.Field.Should().Be(updateDto.Field);
@@ -89,7 +87,7 @@ public class DoctorServiceTests
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
         var readContext = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var sut = DoctorServiceFactory.Create(context);
         //var doctor = AddDoctorDTOFactory.Create();
         //context.Save(doctor);
         var updateDto = UpdateDoctorDTOFactory.Create();
@@ -108,7 +106,7 @@ public class DoctorServiceTests
         //arrange
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var sut = DoctorServiceFactory.Create(context);
         var doctor1 = new AddDoctorBuilder().Builder();
         var doctor2 = new AddDoctorBuilder().WithNationalCode("2288994596").Builder();
         context.Save(doctor1);
@@ -127,7 +125,8 @@ public class DoctorServiceTests
         //arrange
         var db = new EFInMemoryDatabase();
         var context = db.CreateDataContext<EFDataContext>();
-        var sut = DoctorService.Create(context);
+        var readContext = db.CreateDataContext<EFDataContext>();
+        var sut = DoctorServiceFactory.Create(context);
         var doctor1 = new AddDoctorBuilder().Builder();
         var doctor2 = new AddDoctorBuilder().WithNationalCode("2288994596").Builder();
         context.Save(doctor1);

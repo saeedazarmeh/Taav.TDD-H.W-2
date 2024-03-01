@@ -1,6 +1,6 @@
 using DoctorAppointment.Services.Doctors.Contracts.Dto;
 
-namespace DoctorAppointment.Services.Doctors.Contracts;
+namespace DoctorAppointment.Services.Patients.Contracts;
 
 public interface DoctorService
 {

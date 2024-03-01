@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorAppointment.Services.Exeptipn
+namespace DoctorAppointment.Services.Doctors.Exeptipn
 {
-    public class DoctorNotFoundException:Exception
+    public class DoctorNotFoundException : Exception
     {
     }
 }

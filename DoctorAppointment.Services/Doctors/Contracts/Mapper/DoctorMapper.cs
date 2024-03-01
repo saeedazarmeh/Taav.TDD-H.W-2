@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DoctorAppointment.Services.Doctors.Contracts.Mapper
 {
-    public static class DoctorMapper
+    public static class PatientMapper
     {
         public static List<DoctorResultDTO> DoctorsMap(this List<Doctor> doctors)
         {

@@ -33,4 +33,9 @@ public class EFDoctorRepository : DoctorRepository
     {
         return await _context.Doctors.ToListAsync();
     }
+
+    public void Update(Doctor doctor)
+    {
+        _context.Doctors.Update(doctor);
+    }
 }

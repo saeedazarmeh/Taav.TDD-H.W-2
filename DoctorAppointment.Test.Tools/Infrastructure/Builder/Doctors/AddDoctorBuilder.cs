@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorAppointment.Test.Tools.Infrastructure.Builder.Doctor
+namespace DoctorAppointment.Test.Tools.Infrastructure.Builder.Doctors
 {
     public class AddDoctorBuilder
     {

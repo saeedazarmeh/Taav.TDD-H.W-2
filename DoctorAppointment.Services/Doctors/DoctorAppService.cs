@@ -4,7 +4,7 @@ using DoctorAppointment.Services.Doctors.Contracts;
 using DoctorAppointment.Services.Doctors.Contracts.Dto;
 using DoctorAppointment.Services.Doctors.Contracts.Mapper;
 using DoctorAppointment.Services.Doctors.Exeptipn;
-using DoctorAppointment.Services.Exeptipn;
+using DoctorAppointment.Services.Patients.Contracts;
 
 namespace DoctorAppointment.Services.Doctors;
 
@@ -40,7 +40,7 @@ public class DoctorAppService : DoctorService
             throw new DoctorNotFoundException();
         }
         doctor.Edit(dto.FirstName, dto.LastName, dto.Field, dto.NationalCode);
-
+        _repository.Update(doctor);
         await _unitOfWork.Complete();
     }
 

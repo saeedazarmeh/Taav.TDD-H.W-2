@@ -1,6 +1,7 @@
 ﻿using DoctorAppointment.Services.Doctors.Contracts.Dto;
+using DoctorAppointment.Services.Patients.Contracts.Dto;
 
-namespace DoctorAppointment.Test.Tools.Infrastructure.Facrory.Doctor
+namespace DoctorAppointment.Test.Tools.Infrastructure.Facrory.Doctors
 {
     public class UpdateDoctorDTOFactory
     {
@@ -8,9 +9,9 @@ namespace DoctorAppointment.Test.Tools.Infrastructure.Facrory.Doctor
         {
             return new UpdateDoctorDto()
             {
-                FirstName = "dummy-first-name1",
-                LastName = "dummy-last-family1",
-                Field ="health",
+                FirstName = "dummy-first-name2",
+                LastName = "dummy-last-family2",
+                Field = "health",
                 NationalCode = "1122558899",
             };
         }
