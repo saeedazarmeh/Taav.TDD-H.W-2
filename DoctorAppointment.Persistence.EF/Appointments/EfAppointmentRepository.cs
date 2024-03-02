@@ -54,5 +54,10 @@ namespace DoctorAppointment.Persistance.EF.Appointments
         {
             _context.Appoinments.Remove(appoinment);
         }
+
+        public async Task<List<Appoinment>> GetDayAppointmentsWhitDoctorAndPatient(DateTime dateTime)
+        {
+            return await _context.Appoinments.Include(_=>_.Doctor).Include(_ => _.Patient).Where(_ => _.DaTeTime.Date == dateTime.Date).ToListAsync();
+        }
     }
 }

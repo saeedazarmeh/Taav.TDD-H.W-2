@@ -11,6 +11,8 @@ namespace DoctorAppointment.Services.Appointmens.Cantracts
     {
         Task SetAppointment(AddAppoinmentDTO appoinmentDTO);
         Task CancellAppointment(int id);
-        
+        Task<List<AppointmentResultDTO>> GetDayAppointments(DateTime dateTime);
+
+
     }
 }

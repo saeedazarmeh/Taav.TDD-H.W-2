@@ -11,6 +11,7 @@ namespace DoctorAppointment.Services.Appointmens.Cantracts
     {
         void Add(Appoinment appoinment);
         Task<List<Appoinment>> GetDayAppointments(DateTime dateTime);
+        Task<List<Appoinment>> GetDayAppointmentsWhitDoctorAndPatient(DateTime dateTime);
         Task<bool> HasTimeConflictedOrNot(DateTime dateTime);
         Task<Appoinment> GetAppointment(int id);
         void Delete(Appoinment appoinment);

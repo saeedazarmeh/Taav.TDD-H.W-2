@@ -1,3 +1,5 @@
+using DoctorAppointment.Entities.Appoinments;
+
 namespace DoctorAppointment.Entities.Doctors;
 
 public class Doctor
@@ -15,6 +17,7 @@ public class Doctor
     public string LastName { get;private set; }
     public string NationalCode { get;private set; }
     public string Field { get;private set; }
+    public List<Appoinment> Appoinments { get;private set; }
 
     public void Edit(string? firstName=null, string? lastName = null, string? field=null, string? nationalCode=null)
     {

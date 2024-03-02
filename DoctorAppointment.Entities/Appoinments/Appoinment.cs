@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DoctorAppointment.Entities.Doctors;
+using DoctorAppointment.Entities.Patients;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,8 @@ namespace DoctorAppointment.Entities.Appoinments
         public DateTime DaTeTime { get; private set; }
         public decimal Price { get; private set; }
         public decimal Paid { get; private set; }
+        public Patient Patient { get; private set; }
+        public Doctor Doctor { get; private set; }
 
         public void Edit( DateTime daTeTime)
         {

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DoctorAppointment.Services.Appointmens.Exception;
+using DoctorAppointment.Services.Appointmens.Cantracts.Mapper;
 
 namespace DoctorAppointment.Services.Appointmens
 {
@@ -42,6 +43,13 @@ namespace DoctorAppointment.Services.Appointmens
             }
             _repository.Delete(appointment);
             _unit.Complete();
+
+        }
+
+        public async Task<List<AppointmentResultDTO>> GetDayAppointments(DateTime dateTime)
+        {
+           var appointments=await _repository.GetDayAppointmentsWhitDoctorAndPatient(dateTime);
+            return appointments.AppoinmentsMap();
 
         }
 

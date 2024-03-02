@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoctorAppointment.Entities.Appoinments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace DoctorAppointment.Entities.Patients
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public string NationalCode { get; private set; }
+        public List<Appoinment> Appoinments { get; private set; }
 
         public void Edit(string? firstName = null, string? lastName = null,  string? nationalCode = null)
         {
